@@ -18,3 +18,4 @@
 
 LOCAL_PATH := device/tecno/TECNO_CE7j
 
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
