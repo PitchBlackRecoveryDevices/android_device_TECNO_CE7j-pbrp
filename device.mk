@@ -16,5 +16,5 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/tecno/TECNO-CE7j
+LOCAL_PATH := device/tecno/TECNO_CE7j
 
