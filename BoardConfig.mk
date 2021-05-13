@@ -16,7 +16,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/tecno/TECNO_CE7j
+DEVICE_PATH := device/TECNO/CE7j
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -37,7 +37,7 @@ TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := TECNO_CE7j
+TARGET_OTA_ASSERT_DEVICE := TECNO-CE7j
 
 # Bootloader"
 TARGET_BOOTLOADER_BOARD_NAME := CY-CE7J-H693-N

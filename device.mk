@@ -16,6 +16,6 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/tecno/TECNO_CE7j
+LOCAL_PATH := device/TECNO/CE7j
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)

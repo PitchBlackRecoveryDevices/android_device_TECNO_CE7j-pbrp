@@ -16,6 +16,9 @@
 # limitations under the License.
 #
 
+# Release name
+PRODUCT_RELEASE_NAME := TECNO-CE7j
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/embedded.mk)
@@ -23,15 +26,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit from TECNO-CE7j device
-$(call inherit-product, device/tecno/TECNO_CE7j/device.mk)
+$(call inherit-product, device/TECNO/CE7j/device.mk)
 
 # Inherit some common Pitchblack stuff.
 $(call inherit-product, vendor/pb/config/common.mk)
 
-# Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := TECNO_CE7j
-PRODUCT_NAME := omni_TECNO_CE7j
+## Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := CE7j
+PRODUCT_NAME := omni_$(PRODUCT_DEVICE)
 PRODUCT_BRAND := TECNO
-PRODUCT_MODEL := TECNO
-PRODUCT_MANUFACTURER := tecno
-PRODUCT_RELEASE_NAME := TECNO TECNO
+PRODUCT_MODEL := TECNO CE7j
+PRODUCT_MANUFACTURER := TECNO MOBILE LIMITED
+
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=CE7j-OP \
+    PRODUCT_DEVICE=TECNO-CE7j
