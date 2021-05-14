@@ -19,3 +19,6 @@
 LOCAL_PATH := device/TECNO/CE7j
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
+
+# Dynamic Partition
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
