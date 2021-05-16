@@ -98,3 +98,7 @@ TW_USE_TOOLBOX := true
 # Debug
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+
+# Padding
+TW_Y_OFFSET := 90
+TW_H_OFFSET := -90
